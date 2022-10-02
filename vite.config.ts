@@ -9,12 +9,12 @@ export default defineConfig({
     vue(),
     Components({
       dts: true,
-      resolvers: [VantResolver()],
-    }),
+      resolvers: [VantResolver()]
+    })
   ],
   server: {
     port: 8009,
-    host: '0.0.0.0',
+    host: '0.0.0.0'
   },
   resolve: {
     alias: {
@@ -26,7 +26,7 @@ export default defineConfig({
       layouts: path.resolve(__dirname, 'src/layouts'),
       utils: path.resolve(__dirname, 'src/utils'),
       apis: path.resolve(__dirname, 'src/apis'),
-      dirs: path.resolve(__dirname, 'src/directives'),
-    },
-  },
+      dirs: path.resolve(__dirname, 'src/directives')
+    }
+  }
 })

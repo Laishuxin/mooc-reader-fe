@@ -7,16 +7,16 @@ const routes = [
   { path: '/', component: () => import('../pages/home.vue') },
   {
     path: '/account/:auth',
-    component: () => import('../pages/account/_auth.vue'),
+    component: () => import('../pages/account/_auth.vue')
   },
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
-    component: () => import('../pages/404.vue'),
-  },
+    component: () => import('../pages/404.vue')
+  }
 ]
 
 export const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 })

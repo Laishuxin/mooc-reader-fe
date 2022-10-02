@@ -1,5 +1,5 @@
-import { isDef } from '@/utils'
 import { defineStore } from 'pinia'
+import { isDef } from '@/utils'
 
 export const useAccountStore = defineStore('account', {
   state: () => {
@@ -9,6 +9,6 @@ export const useAccountStore = defineStore('account', {
   getters: {
     isLogin(state) {
       return isDef(state.user)
-    },
-  },
+    }
+  }
 })

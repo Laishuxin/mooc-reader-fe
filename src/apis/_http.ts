@@ -4,7 +4,7 @@ export const http = axios.create({})
 
 export const request = (method: string) => {
   return http({
-    method,
+    method
   })
 }
 

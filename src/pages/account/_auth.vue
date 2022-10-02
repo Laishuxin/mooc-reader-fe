@@ -1,6 +1,4 @@
-<template>
-  account
-</template>
+<template>account</template>
 
 <script setup lang="ts"></script>
 
